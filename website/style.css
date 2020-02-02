@@ -1,0 +1,188 @@
+/** OLD CSSS *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+}
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 100px;
+    line-height: 80px;
+    color: white;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+a.active,a:hover{
+    transition: .5s;
+    border: 1px solid white;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.active{
+        left: 0;
+    }
+}
+section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+**/
+
+h1 {
+    font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+    width: 100%;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 3px;
+    font-weight: 300;
+    position: fixed; /* or absolute */
+    top: 40%;
+   left: 40%;
+
+}
+
+p2 {
+    font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+    width: 100%;
+    font-size: 35px;
+    line-height: 0.8;
+    letter-spacing: 3px;
+    font-weight: 300;
+    position: fixed; /* or absolute */
+    top: 40%;
+   left: 36%;
+
+}
+
+p {
+    font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+    width: 100%;
+    font-size: 15px;
+    line-height: 0.8;
+    letter-spacing: 3px;
+    font-weight: 300;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 39%;
+
+}
+
+button{
+    position: fixed; /* or absolute */
+    top: 60%;
+    left: 47%;
+    width: 100px;
+    height: 50px;
+
+}
+
+.box{
+    position: fixed; /* or absolute */
+
+      position: absolute;
+     top: 355px;
+     left: 575px;
+
+}
+
+form {
+   font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  text-transform: uppercase;
+  position: fixed;
+   top: 55%;
+   left: 40%;
+
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 3000% 3000%;
+	animation: gradient 50s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
